@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tictactoe</title>
+    <style>
+        .c {
+            width: 65px;
+            height: 65px;
+            background-color: aqua;
+            border: 1px solid black;
+            cursor: pointer;
+            font-weight: bolder;
+            align-items: center;
+            font-size: 35px;
+            color: orangered;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center;
+            margin-top: 110px;
+            margin-bottom: 20px;
+        }
+        #re{
+            width: 70px;
+            height: 30px;
+            background-color: black;
+            color: white;
+        }
+        #re:hover{
+            width: 80px;
+            height: 40px;
+            box-shadow: 0 0 2px 2px red;
+        }
+        body{
+            background-image: url('./t.jpg'); 
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed;
+        }
+        h1{
+            padding-top: 40px;
+            color: red;
+            font-size: 45px;
+        }
+        #result{
+            font-size: 40px;
+            color: purple;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <center>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="main">
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+        </div>
+        <button id="re" onclick="res()">Restart</button>
+        <p id="result"></p>
+    </center>
+</body>
+
+</html>
